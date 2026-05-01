@@ -332,7 +332,13 @@ function startQuiz() {
   score = 0;
   totalAnswered = 0;
 
-  questions.forEach((q) => (q.wrongCount = 0));
+  questions.forEach((q) => {
+    q.wrongCount = 0;
+    q.answeredCorrectly = false;
+  });
+
+  restartBtn.classList.add("d-none"); // ✅ luôn ẩn
+  nextBtn.classList.add("d-none");
 
   showQuestion();
 }
