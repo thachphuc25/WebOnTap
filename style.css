@@ -15,11 +15,11 @@ body {
 }
 
 .correct {
-  background-color: #28a745 !important;
+  background-color: #00ff3c !important;
   color: white;
 }
 
 .wrong {
-  background-color: #dc3545 !important;
+  background-color: #ff0019 !important;
   color: white;
 }
